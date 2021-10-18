@@ -55,7 +55,7 @@
         color: white;
       }
       .flex {
-        flex-direction: row-reverse;
+        display: flex;
       }
       .content {
         flex: 5 auto;
@@ -69,6 +69,12 @@
       }
       .item {
         flex-direction: row; 
+      }
+      .item:first-child {
+        flex: 1;
+      }
+      .item:nth-child (2) {
+        flex: 2;
       }
 
       /* Extra small devices (phones, 600px and down) */
